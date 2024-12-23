@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pickmybus">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/car"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PickMyBus">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyClxksxrsdy9LeSTQYqmoYsEqkqNKB9Ln0" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".VehicleBooking"
+            android:exported="false" />
+        <activity
+            android:name=".studentsignup"
+            android:exported="false"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".studenthome"
+            android:exported="false"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".studentlogin"
+            android:exported="false"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
